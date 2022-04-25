@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/i"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_1"
+            android:layout_width="290dp"
+            android:layout_height="146dp"
+            android:layout_gravity="center"
+            android:outlineSpotShadowColor="@color/black"
+            android:src="@drawable/flag_of_uzbekistan1"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toTopOf="@id/card1"
+            app:layout_constraintLeft_toLeftOf="@id/card1"
+            app:layout_constraintRight_toRightOf="@id/card1"
+            app:layout_constraintTop_toTopOf="@id/card1" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin_1_matn"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lin_2_btn_1"
+        android:orientation="horizontal"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/lin_2_btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/lin_3_btn_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lin_1_matn" />
+
+    <LinearLayout
+        android:id="@+id/lin_3_btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lin_2_btn_1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
